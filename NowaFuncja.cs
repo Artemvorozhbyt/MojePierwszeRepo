@@ -70,11 +70,11 @@ class Program
 
 
 
-                        if (count /*??*/ 0)
+                        if (count == 0)
 
                         {
 
-                            // Odkryj sąsiadujące puste pola.
+                           
 
                             ExpandZeros(board, displayBoard, x, y);
 
@@ -126,11 +126,11 @@ class Program
 
         char[,] board = new char[height, width];
 
-        Random random = /*??*/
+        Random random = new Random();
 
 
 
-        // Wypełnij planszę bombami.
+    
 
         for (int i = 0; i < bombCount; i++)
 
@@ -170,7 +170,7 @@ class Program
 
 
 
-        // Wypełnij planszę niewidocznymi polami.
+       
 
         for (int i = 0; i < height; i++)
 
@@ -188,7 +188,7 @@ class Program
 
 
 
-        /*??*/ displayBoard;
+        Return displayBoard;
 
     }
 
@@ -260,7 +260,7 @@ class Program
 
         {
 
-            for (int j = Math.Max(0, x - 1); j <= /*??*/(width - 1, x + 1); j++)
+            for (int j = Math.Max(0, x - 1); j <= Math.min(width - 1, x + 1); j++)
 
             {
 
@@ -362,7 +362,7 @@ class Program
 
 
 
-        return uncoveredCount == /* ??*/ * height - bombCount;
+        return uncoveredCount == (width * height - bombCount);
 
     }
 
