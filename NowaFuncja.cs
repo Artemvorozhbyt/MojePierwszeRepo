@@ -188,7 +188,7 @@ class Program
 
 
 
-        Return displayBoard;
+        return displayBoard;
 
     }
 
@@ -260,7 +260,7 @@ class Program
 
         {
 
-            for (int j = Math.Max(0, x - 1); j <= Math.min(width - 1, x + 1); j++)
+            for (int j = Math.Max(0, x - 1); j <= Math.Min(width - 1, x + 1); j++)
 
             {
 
