@@ -54,7 +54,7 @@ class Program
 
                     {
 
-                        Console.WriteLine("Boom! Koniec gry.");
+                        Console.WriteLine("<Boom! Koniec gry.>");
 
                         gameOver = true;
 
@@ -86,7 +86,7 @@ class Program
 
                         {
 
-                            Console.WriteLine("Gratulacje! Wygrałeś!");
+                            Console.WriteLine("===Gratulacje! Wygrałeś!===");
 
                             gameOver = true;
 
